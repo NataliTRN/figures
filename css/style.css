@@ -1,0 +1,118 @@
+/*css reset*/			
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+/*main*/
+			.main{
+				background:oldlace;
+				width: 1280px;
+				margin: 0 auto;
+				padding: 100px;
+			}
+			
+			.main div{
+				margin: 50px;
+			}
+
+			.nut{
+				height: 65px;
+				width: 110px;
+				background: gray;
+				position: relative;
+				background: radial-gradient(circle, transparent 50%, grey 50%);
+			}
+			.nut:before{
+				content: "";
+				position: absolute;
+				top: -30px;
+				height: 0px;
+				width: 0px;
+				border-left: 55px solid transparent;
+				border-right: 55px solid transparent;
+				border-bottom: 30px solid gray;
+			}
+			.nut:after{
+				content: "";
+				position: absolute;
+				bottom: -30px;
+				height: 0px;
+				width: 0px;
+				border-left: 55px solid transparent;
+				border-right: 55px solid transparent;
+				border-top: 30px solid gray;
+			}
+
+
+			.bolt{
+				height: 50px;
+				width: 150px;
+				background: slategrey;
+				position: relative;
+				border-radius: 0px 10px 10px 0px;
+
+			}
+			.bolt:before{
+				content: "";
+				position: absolute;
+				width: 50px;
+				height: 100px;
+				top:-25px;
+				left: -25px;
+				border-radius: 50% 5px 5px 50%;
+				background: linear-gradient( to bottom, slategrey 48%, transparent 48%, transparent 52%, slategrey 52%);
+				z-index: 5;
+
+			}
+			.bolt:after{
+				content: "";
+				position: absolute;
+				height: 50px;
+				width: 125px;
+				top: 0px;
+				right: 0px;
+				border-radius: 0px 10px 10px 0px;
+				background: repeating-linear-gradient(to right bottom, transparent 0px, transparent 35px, black 35px, black 40px);
+			}
+
+
+
